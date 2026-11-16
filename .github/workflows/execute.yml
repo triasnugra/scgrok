@@ -1,0 +1,41 @@
+name: Eksekusi order
+on:
+  workflow_dispatch:
+    inputs:
+      venue:
+        description: "kertas tidak mengirim order. binance dan bybit butuh rahasia. hyperliquid hanya menulis tiket."
+        type: choice
+        options: [kertas, binance, bybit, hyperliquid]
+        default: kertas
+      kirim:
+        description: "Centang hanya bila kunci LIVE_TRADING dan I_UNDERSTAND sudah diisi. Tanpa centang, tetap kertas."
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Siapkan tiket atau kirim
+        env:
+          LIVE_TRADING: ${{ vars.LIVE_TRADING }}
+          I_UNDERSTAND_I_CAN_LOSE_EVERYTHING: ${{ vars.I_UNDERSTAND_I_CAN_LOSE_EVERYTHING }}
+          ALLOW_UNPROVEN: ${{ vars.ALLOW_UNPROVEN }}
+          USE_AI: ${{ vars.USE_AI }}
+          CAPITAL_USD: ${{ vars.CAPITAL_USD }}
+          RISK_PCT: ${{ vars.RISK_PCT }}
+          BINANCE_API_KEY: ${{ secrets.BINANCE_API_KEY }}
+          BINANCE_API_SECRET: ${{ secrets.BINANCE_API_SECRET }}
+          BYBIT_API_KEY: ${{ secrets.BYBIT_API_KEY }}
+          BYBIT_API_SECRET: ${{ secrets.BYBIT_API_SECRET }}
+        run: |
+          if [ "${{ inputs.kirim }}" = "true" ] && [ "${{ inputs.venue }}" != "kertas" ]; then
+            node scripts/execute.mjs --live ${{ inputs.venue }} --send
+          else
+            node scripts/execute.mjs
+          fi
