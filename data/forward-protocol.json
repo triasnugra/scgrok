@@ -1,0 +1,53 @@
+{
+ "versi": 1,
+ "mulai": "2026-11-16T05:49:41.924Z",
+ "mulai_ms": 1794808181924,
+ "engine": "901c52d9d979a9d9",
+ "agen": "Eliz Scalp",
+ "aturan": {
+  "hold_jam": 12,
+  "maks_sl_persen": 4.5,
+  "min_sl_persen": 0.4,
+  "satu_order_aktif_per_koin": true,
+  "biaya": {
+   "fee_persen_per_sisi": 0.04,
+   "slip_persen": 0.04
+  },
+  "tp_kelipatan_risiko": 1.7
+ },
+ "syarat_evaluasi": {
+  "min_trade_terisi": 120,
+  "min_minggu_berbeda": 12
+ },
+ "kriteria_lulus": "Setelah kedua syarat terpenuhi: batas bawah CI 95% (bootstrap per minggu) dari rata-rata R per trade terisi, setelah biaya, harus lebih dari 0.",
+ "hipotesis": [
+  "H1: setup tanpa pemicu keras (deviasi, Monday sweep, atau breakout-retest), SL di luar 0,4–4,5%, RR di bawah 1,5, atau TP lebih jauh dari 8% bukan scalp dan tidak dicatat.",
+  "H2: entry limit yang lebih jauh dari 1,6% harga scan, atau pemicu yang lebih tua dari 6 jam, lebih sering tidak terisi atau terisi di rezim lain.",
+  "H3: scalp melawan musim 4H tanpa minimal 3 elemen struktur memberi R/trade lebih buruk daripada scalp searah musim.",
+  "H4: altcoin long saat BTC sedang musim short, tidak di mid-range, dan sudah bergerak lebih dari 1,8% dalam 12 jam melawan arah trade, lebih sering kena SL. Saat BTC sendiri di mid-range, altcoin tetap boleh di-scalp di tepi rangenya.",
+  "H5: lebih dari 4 sinyal baru per jam saling berkorelasi. Batas ini menurunkan risiko tersembunyi.",
+  "Keputusan: mesin ini layak dinaikkan ukurannya hanya bila forward test LULUS (batas bawah CI 95% R/trade setelah biaya > 0, minimal 120 trade terisi dan 12 minggu). Sebelum itu risiko akun dibatasi 0,25% per trade."
+ ],
+ "konfigurasi_gerbang": {
+  "versi": 1,
+  "maxSlPct": 4.5,
+  "minSlPct": 0.4,
+  "minRR": 1.5,
+  "maxTpPct": 8,
+  "minQuoteVolUsd": 20000000,
+  "maxDistPct": 1.6,
+  "maxTriggerAgeH": 6,
+  "counterSeasonMinStruct": 3,
+  "maxSignalsPerScan": 4,
+  "maxSameSidePerScan": 3,
+  "btcShockPct": 1.8,
+  "holdJam": 12
+ },
+ "larangan": [
+  "Mengubah core.mjs, gate.mjs, atau trade-sim.mjs. Hash berubah. Hapus data/forward-protocol.json hanya bila kamu sadar uji dimulai dari nol.",
+  "Mengubah syarat lulus setelah protokol dimulai.",
+  "Mengedit entry, SL, TP, arah, atau waktu pada baris yang sudah disegel.",
+  "Membaca angka kinerja sebagai bukti sebelum syarat terpenuhi.",
+  "Memakai mesin ini untuk spot jangka panjang, akumulasi, atau target makro dari video YouTube. Itu di luar kontrak scalp."
+ ]
+}
