@@ -1,0 +1,6 @@
+node_modules/
+backtest/cache/
+data/paper-orders.json
+data/live-log.json
+*.log
+.DS_Store
