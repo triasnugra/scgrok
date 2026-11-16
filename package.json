@@ -1,0 +1,15 @@
+{
+  "name": "mesin-scalp-eliz",
+  "private": true,
+  "type": "module",
+  "description": "Mesin analisis scalping crypto berbasis aturan publik @eliz883. Bukan nasihat finansial. Bukan bot resmi Eliz.",
+  "scripts": {
+    "scan": "node scripts/scan.mjs",
+    "test": "node scripts/test-engine.mjs && node scripts/test-sim.mjs && node scripts/test-forward.mjs && node scripts/test-prompt.mjs",
+    "forward": "node scripts/forward.mjs report",
+    "execute": "node scripts/execute.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

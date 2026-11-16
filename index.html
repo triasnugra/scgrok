@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101614">
+<title>Mesin Scalp Eliz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#101614;--card:#18211d;--line:#2a3a33;--tx:#e7efe9;--mut:#93a79c;--ok:#3dbe8a;--bad:#e15d5d;--warn:#e2b15a;--ac:#d7b07a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0 auto;max-width:880px;padding:0 16px 48px;background:var(--bg);color:var(--tx);font:15px/1.5 "IBM Plex Sans",system-ui,sans-serif}
+header{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;padding:22px 0 8px}
+h1{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:20px;font-weight:600;margin:0;letter-spacing:-.03em}
+h1 span{color:var(--ac)}
+h2{font-size:15px;margin:28px 0 8px;font-weight:600}
+p{margin:8px 0}
+a{color:var(--ac)}
+nav{position:sticky;top:0;z-index:3;display:flex;gap:6px;overflow-x:auto;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line)}
+nav a{color:var(--mut);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:13px;white-space:nowrap}
+.al{border:1px solid;border-radius:10px;padding:10px 12px;margin-top:8px;font-size:14px}
+.al.r{background:#2a1616;border-color:#6e3030}.al.y{background:#2a2416;border-color:#6d5a2c}.al.g{background:#13261c;border-color:#1f5b40}
+.al small{color:var(--mut)}
+button{background:var(--ac);color:#1a140c;border:0;border-radius:10px;padding:10px 14px;font-weight:600;min-height:44px}
+button.ghost{background:transparent;color:var(--tx);border:1px solid var(--line)}
+button:disabled{opacity:.5}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
+label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--mut)}
+input{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:10px;padding:10px;width:110px;font:inherit}
+.c{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:10px 0}
+.t{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.bd,.ch{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;font-weight:600;letter-spacing:.04em;padding:3px 8px;border-radius:999px}
+.bd.L{background:#123226;color:var(--ok)}.bd.S{background:#3a1a1a;color:var(--bad)}
+.ch{border:1px solid var(--line);color:var(--mut)}.ch.ok{color:var(--ok);border-color:#1f5b40}.ch.bad{color:var(--bad);border-color:#6e3030}.ch.wait{color:var(--warn);border-color:#6d5a2c}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0}
+.g4 span{display:block;color:var(--mut);font-size:11px}
+.m{color:var(--mut);font-size:13px}.w{color:var(--warn);font-size:13px}
+.sz{margin-top:8px;background:#121a17;border-radius:10px;padding:8px 10px;font-size:13px}
+.sc{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--mut);font-weight:500}
+.TP{color:var(--ok)}.SL{color:var(--bad)}
+#pg{height:3px;background:var(--line);border-radius:2px;margin:10px 0;overflow:hidden}
+#pg i{display:block;height:100%;width:0;background:var(--ac)}
+details{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--card)}
+summary{cursor:pointer;font-weight:600}
+li{margin:6px 0}
+@media(max-width:640px){.g4{grid-template-columns:repeat(2,1fr)} header{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>MESIN <span>SCALP</span></h1>
+    <p class="m" style="margin:4px 0 0">Aturan publik @eliz883, hanya scalp. Bukan akun resmi. Bukan nasihat finansial.</p>
+  </div>
+</header>
+<nav>
+  <a href="#sig">Sinyal</a>
+  <a href="#btc">BTC</a>
+  <a href="#watch">Pantauan</a>
+  <a href="#jr">Jurnal</a>
+  <a href="#aturan">Aturan</a>
+</nav>
+<div id="al"></div>
+<div id="rl"></div>
+
+<h2 id="sig">Sinyal jam ini</h2>
+<div class="bar">
+  <label>Modal USD<input id="cap" type="number" min="0" value="1000"></label>
+  <label>Risiko yang diminta %<input id="rk" type="number" min="0" step="0.05" value="1"></label>
+  <button id="go" type="button">Pindai Binance</button>
+  <button id="ex" class="ghost" type="button">Contoh sintetis</button>
+</div>
+<div id="pg"><i></i></div>
+<p id="st" class="m">Belum dipindai. Contoh sintetis tidak memakai uang dan tidak memakai harga hidup.</p>
+<div id="out"></div>
+
+<h2 id="btc">Konteks BTC</h2>
+<div id="gt" class="c m">Menunggu pemindaian.</div>
+
+<h2 id="watch">Pantauan</h2>
+<div class="sc"><table id="wt"><tr><td class="m">Menunggu pemindaian.</td></tr></table></div>
+<div id="wc"></div>
+
+<h2 id="jr">Jurnal yang disegel Actions</h2>
+<div id="stats" class="g4"></div>
+<div id="fw" class="c m">Laporan forward muncul setelah workflow pertama menulis data/forward-report.json.</div>
+<div class="sc"><table id="jt"><tr><td class="m">Memuat…</td></tr></table></div>
+
+<h2 id="aturan">Yang mesin ini lakukan, dan yang tidak</h2>
+<details open>
+  <summary>Scalp saja</summary>
+  <ul>
+    <li>Masuk hanya di tepi range H1, setelah sapuan lalu reclaim, Monday sweep yang sudah selesai, atau retest breakout searah musim.</li>
+    <li>Entry adalah limit di level. Harga yang sudah lari lebih dari 1,6% ditolak.</li>
+    <li>Stop harga harus 0,4% sampai 4,5%. Lebih lebar bukan scalp, dan tidak dipersempit diam-diam.</li>
+    <li>Tengah range, tidak ada pemicu, atau dua arah sekaligus: diam.</li>
+    <li>BTC di tengah range tidak melarang scalp altcoin. BTC yang sedang menjatuh dengan musim short melarang long altcoin.</li>
+    <li>Heatmap bukan strategi. Klaster equal high/low hanya tambahan, bukan alasan masuk.</li>
+    <li>Video YouTube yang membahas akumulasi spot, moonbag, dan SL 15% tidak dipakai.</li>
+    <li>Order live tidak dikirim dari halaman ini. Halaman hanya membaca pasar publik.</li>
+  </ul>
+</details>
+
+<script type="module">
+import { klines, tickers, skipSymbol, featScalp, scanInput, alertList, konfirmasi, statusTeks } from './core.mjs';
+import { evaluate, selectScan, riskPlan, readiness, RISK_CAP, ALASAN } from './gate.mjs';
+import { withLongSweep } from './fixtures.mjs';
+
+const $ = s => document.querySelector(s);
+const SD = ['turun','netral','naik'];
+const fpx = v => v >= 1000 ? v.toFixed(1) : v >= 1 ? v.toFixed(3) : v.toPrecision(3);
+const ld = k => { try { return localStorage.getItem(k); } catch { return null; } };
+const sv = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
+if (ld('cap')) $('#cap').value = ld('cap');
+if (ld('rk')) $('#rk').value = ld('rk');
+
+let all = [], res = [], btc = null, fw = null, contoh = false;
+
+function showAl() {
+  const A = alertList();
+  $('#al').innerHTML = A.map(a => `<div class="al ${a[0]}">${a[1]} <small>${a[2] || ''}</small></div>`).join('') || '<div class="al g">Tidak ada peringatan kalender untuk jam ini.</div>';
+}
+function showRl() {
+  const R = readiness(fw);
+  $('#rl').innerHTML = R.lulus
+    ? `<div class="al g"><b>Forward test lulus.</b> Risiko akun boleh sampai ${RISK_CAP.lulus}% per trade. Tetap bukan jaminan.</div>`
+    : `<div class="al r"><b>Mode uji.</b> Jangan pakai uang yang tidak siap hilang. Risiko dikunci ${RISK_CAP.belumLulus}% per trade, leverage tersirat maksimal ${RISK_CAP.leverageMaks}x. <small>${R.items.map(i => (i.ok ? 'ya ' : 'belum ') + i.t).join(' · ')}</small></div>`;
+}
+function chart(r) {
+  const k = r.k || []; if (!k.length) return '';
+  const W = 640, Hh = 220, n = k.length, bw = W / n, P = 16;
+  const lines = [[r.H, 'range high', '#93a79c'], [r.L, 'range low', '#93a79c']];
+  if (r.entry) lines.push([r.entry, 'entry', '#d7b07a'], [r.sl, 'SL', '#e15d5d'], [r.tp, 'TP', '#3dbe8a']);
+  const mx = Math.max(...k.map(q => q.h), ...lines.map(a => a[0]).filter(Number.isFinite));
+  const mn = Math.min(...k.map(q => q.l), ...lines.map(a => a[0]).filter(Number.isFinite));
+  const y = v => (P + (mx - v) / (mx - mn || 1) * (Hh - 2 * P)).toFixed(1);
+  let s = `<svg viewBox="0 0 ${W} ${Hh}" width="100%" role="img" aria-label="H1 ${r.s || ''}" style="background:#121a17;border-radius:10px">`;
+  k.forEach((q, i) => {
+    const x = (i * bw + bw / 2).toFixed(1), c = q.c >= q.o ? '#3dbe8a' : '#e15d5d';
+    s += `<line x1="${x}" x2="${x}" y1="${y(q.h)}" y2="${y(q.l)}" stroke="${c}"/>`;
+    s += `<rect x="${(x - bw * .32).toFixed(1)}" y="${y(Math.max(q.o, q.c))}" width="${(bw * .64).toFixed(1)}" height="${Math.max(1, Math.abs(y(q.o) - y(q.c)))}" fill="${c}"/>`;
+  });
+  for (const [v, t, c] of lines) if (Number.isFinite(v)) s += `<line x1="0" x2="${W}" y1="${y(v)}" y2="${y(v)}" stroke="${c}" stroke-dasharray="4 3"/><text x="4" y="${Math.max(12, y(v) - 3)}" fill="${c}" font-size="10">${t} ${fpx(v)}</text>`;
+  return s + '</svg>';
+}
+function card(r) {
+  const lulus = readiness(fw).lulus;
+  const rp = r.entry ? riskPlan({ capital: +$('#cap').value || 0, riskPct: +$('#rk').value || 0, entry: r.entry, sl: r.sl, lulus }) : null;
+  const v = r.v || { ok: false, reasons: [] };
+  const jarak = r.dist == null ? '' : r.dist <= 0.35 ? ['di level', 'ok'] : r.dist <= 1.6 ? ['tunggu retest', 'wait'] : ['terlalu jauh', 'bad'];
+  return `<article class="c"><div class="t"><b>${r.s}</b><span>${r.side ? `<span class="bd ${r.side === 1 ? 'L' : 'S'}">${r.side === 1 ? 'LONG' : 'SHORT'}</span>` : ''} ${v.ok ? '<span class="ch ok">LOLOS</span>' : '<span class="ch bad">DITOLAK</span>'} ${jarak ? `<span class="ch ${jarak[1]}">${jarak[0]}</span>` : ''}</span></div>
+  ${r.entry ? `<div class="g4"><div><span>Limit</span>${fpx(r.entry)}</div><div><span>SL ${r.slp.toFixed(2)}%</span>${fpx(r.sl)}</div><div><span>TP ${r.rr.toFixed(2)}R</span>${fpx(r.tp)}</div><div><span>Jarak</span>${r.dist.toFixed(2)}%</div></div>` : ''}
+  <div class="m">Harga ${fpx(r.px)} · musim ${SD[(r.season ?? 0) + 1]} (${r.seasonTf || 'n/a'}) · posisi range ${Math.round((r.pos || 0) * 100)}%</div>
+  <div class="m">${(r.why || []).join(' · ') || statusTeks(r)}</div>
+  ${r.cf ? `<div class="m">15m: <span class="ch ${r.cf[0]}">${r.cf[1]}</span></div>` : ''}
+  ${v.ok ? '' : `<div class="w">${(v.reasons || []).map(c => ALASAN[c] || c).join(' · ')}</div>`}
+  ${rp ? `<div class="sz">Risiko terpakai $${rp.riskUsd.toFixed(2)} (${rp.riskPctEff}%). Qty ${rp.qty >= 100 ? rp.qty.toFixed(1) : rp.qty.toPrecision(3)} · notional $${rp.notional.toFixed(0)} · leverage tersirat ${rp.leverage.toFixed(2)}x. ${rp.notes.join(' · ')}</div>` : ''}
+  <details><summary>Grafik 80 jam</summary>${chart(r)}</details></article>`;
+}
+function render() {
+  const A = res.filter(r => r.v?.ok), B = res.filter(r => !r.v?.ok);
+  const eff = riskPlan({ capital: 1, riskPct: +$('#rk').value || 0, entry: 2, sl: 1, lulus: readiness(fw).lulus }).riskPctEff;
+  const tot = eff * A.length;
+  $('#out').innerHTML = (contoh ? '<p class="w">Kartu di bawah memakai harga sintetis, bukan Binance.</p>' : '')
+    + (A.length ? `<p class="m">${A.length} setup lolos. Bila semuanya diambil, risiko terbuka ${tot.toFixed(2)}%.${tot > RISK_CAP.risikoTerbukaMaks ? ' Itu di atas batas ' + RISK_CAP.risikoTerbukaMaks + '%.' : ''}</p>` : '<p class="m">Tidak ada setup yang lolos. Diam juga posisi.</p>')
+    + A.map(card).join('')
+    + (B.length ? `<details><summary>Ditolak (${B.length})</summary>${B.map(card).join('')}</details>` : '');
+}
+function paintBtc() {
+  if (!btc) return;
+  $('#gt').innerHTML = `<div class="g4"><div><span>Harga</span>${fpx(btc.px)}</div><div><span>Musim ${btc.seasonTf}</span>${SD[btc.season + 1]}</div><div><span>Range</span>${Math.round(btc.pos * 100)}%</div><div><span>12 jam</span>${(btc.ret12 * 100).toFixed(2)}%</div></div>
+  <p class="m">${btc.mid ? 'BTC di mid-range. Jangan paksakan BTC. Altcoin masih boleh di tepi rangenya sendiri.' : btc.season === 1 ? 'Musim long. Utamakan scalp long di pullback yang ada sapuannya.' : btc.season === -1 ? 'Musim short. Jangan memaksa long altcoin bila gerak 12 jam sudah keras.' : 'Musim netral. Hanya setup yang invalidasinya sangat pendek.'}</p>
+  ${chart(btc)}`;
+}
+function watch() {
+  const rows = [...all].sort((a, b) => Math.min(a.pos, 1 - a.pos) - Math.min(b.pos, 1 - b.pos));
+  $('#wt').innerHTML = '<tr><th>Koin</th><th>Musim</th><th>Range</th><th>Status</th></tr>' + rows.map(r => `<tr data-s="${r.s}" style="cursor:pointer"><td>${r.s}</td><td>${SD[r.season + 1]}</td><td>${Math.round(r.pos * 100)}%</td><td>${statusTeks(r)}</td></tr>`).join('');
+}
+function gateAll() {
+  const ev = res.map(r => ({ f: r, g: evaluate(r, { btc }) }));
+  const { keep, drop } = selectScan(ev.filter(x => x.g.ok));
+  ev.forEach(x => { x.f.v = { ok: false, reasons: x.g.reasons, score: x.g.score }; });
+  keep.forEach(x => { x.f.v = { ok: true, reasons: [], score: x.g.score }; });
+  drop.forEach(d => { d.item.f.v = { ok: false, reasons: [d.reason], score: d.item.g.score }; });
+}
+async function go() {
+  contoh = false;
+  const b = $('#go'); b.disabled = true; res = []; all = []; $('#out').innerHTML = ''; $('#pg i').style.width = '8%';
+  try {
+    $('#st').textContent = 'Mengambil pasar perpetual…';
+    const tk = await tickers();
+    const top = tk.rows.filter(x => x.symbol?.endsWith('USDT') && !skipSymbol(x.symbol.slice(0, -4))).sort((a, c) => +c.quoteVolume - +a.quoteVolume).slice(0, 24);
+    for (let i = 0; i < top.length; i += 6) {
+      $('#st').textContent = `Memindai ${Math.min(i + 6, top.length)}/${top.length}…`;
+      $('#pg i').style.width = (10 + (i / top.length) * 80) + '%';
+      await Promise.all(top.slice(i, i + 6).map(async x => {
+        try {
+          const kl = await klines(x.symbol, '1h', 400);
+          const sc = scanInput(kl.bars);
+          const r = featScalp(sc.bars, { qv: +x.quoteVolume || sc.qv, sumber: kl.sumber });
+          r.s = x.symbol.slice(0, -4);
+          all.push(r);
+          if (r.s === 'BTC') btc = r;
+          if (r.side) res.push(r);
+        } catch {}
+      }));
+    }
+    if (!btc) throw new Error('BTC tidak masuk daftar');
+    gateAll();
+    const live = res.filter(r => r.v?.ok);
+    await Promise.all(live.map(async r => {
+      try {
+        const m = (await klines(r.s + 'USDT', '15m', 40)).bars.filter(q => q.t + 15 * 60e3 <= Date.now());
+        r.cf = konfirmasi(m, r);
+        if (r.cf[0] === 'bad') r.v = { ok: false, reasons: ['KONFIRMASI_15M_JELEK'] };
+      } catch { r.cf = ['wait', '15m tidak tersedia']; }
+    }));
+    render(); paintBtc(); watch();
+    $('#st').textContent = `Selesai. ${all.length} koin, ${res.filter(r => r.v?.ok).length} lolos. Sumber ${tk.sumber}. Halaman ini tidak mengirim order.`;
+  } catch (e) {
+    $('#st').textContent = 'Pasar tidak terjangkau dari browser ini (' + (e?.message || e) + '). Contoh sintetis tetap bisa dijalankan.';
+  }
+  $('#pg i').style.width = '100%'; b.disabled = false;
+}
+function contohJalan() {
+  contoh = true; all = []; res = [];
+  const r = featScalp(withLongSweep(), { qv: 8e7, sumber: 'binance-perp' });
+  r.s = 'CONTOH';
+  btc = { ...r, s: 'BTC', side: 0, mid: true, season: 0, seasonTf: '4h', ret12: 0, why: [] };
+  res = [r];
+  gateAll();
+  render(); paintBtc();
+  $('#wt').innerHTML = '<tr><td class="m">Contoh tidak punya daftar koin.</td></tr>';
+  $('#st').textContent = 'Contoh sintetis: sapuan di bawah range lalu reclaim. Bukan harga BTC yang sedang berjalan.';
+}
+$('#go').onclick = go;
+$('#ex').onclick = contohJalan;
+$('#wt').onclick = e => {
+  const tr = e.target.closest('tr[data-s]'); if (!tr) return;
+  const r = all.find(x => x.s === tr.dataset.s); if (!r) return;
+  $('#wc').innerHTML = `<div class="c"><b>${r.s}</b> <span class="m">${statusTeks(r)}</span>${chart(r)}</div>`;
+};
+['cap', 'rk'].forEach(id => $('#' + id).oninput = e => { sv(id, e.target.value); render(); });
+
+fetch('data/journal.json').then(r => r.json()).then(j => {
+  const J = (Array.isArray(j) ? j : []).filter(r => r.agen === 'Eliz Scalp').slice().reverse();
+  const cl = J.filter(r => ['TP', 'SL', 'kedaluwarsa'].includes(r.hasil));
+  const W = J.filter(r => r.hasil === 'TP').length, Ls = J.filter(r => r.hasil === 'SL').length;
+  const Rs = cl.map(r => +r.R).filter(Number.isFinite), sum = Rs.reduce((a, b) => a + b, 0);
+  $('#stats').innerHTML = [['Sinyal', J.length], ['TP / SL', W + ' / ' + Ls], ['Rata-rata R', Rs.length ? (sum / Rs.length).toFixed(2) : '–'], ['Total R', Rs.length ? sum.toFixed(1) : '–']].map(a => `<div class="c" style="margin:0"><span class="m">${a[0]}</span><br><b>${a[1]}</b></div>`).join('');
+  const H = ['waktu', 'aset', 'arah', 'entry', 'sl', 'tp', 'hasil', 'R'];
+  $('#jt').innerHTML = '<tr>' + H.map(h => `<th>${h}</th>`).join('') + '</tr>' + (J.slice(0, 80).map(r => '<tr>' + H.map(h => `<td class="${h === 'hasil' ? r.hasil : ''}">${r[h] ?? ''}</td>`).join('') + '</tr>').join('') || '<tr><td class="m">Jurnal masih kosong. Workflow Actions mengisinya.</td></tr>');
+}).catch(() => { $('#jt').innerHTML = '<tr><td class="m">Jurnal belum ada.</td></tr>'; });
+fetch('data/forward-report.json').then(r => r.ok ? r.json() : null).then(a => {
+  if (!a) return; fw = a; showRl(); render();
+  const p = a.progress || { trade_terisi: [0, 120], minggu: [0, 12] };
+  $('#fw').innerHTML = `<b>Forward test</b> sejak ${String(a.protocol?.mulai || '').slice(0, 10) || '–'}<br>Trade terisi ${p.trade_terisi[0]}/${p.trade_terisi[1]} · minggu ${p.minggu[0]}/${p.minggu[1]}${a.chain && a.chain.ok === false ? ' · <b>jurnal rusak</b>' : ''}<br>${a.ready ? 'Keputusan: <b>' + (a.verdict?.pass ? 'LULUS' : 'TIDAK LULUS') + '</b>' : 'Angka kinerja disembunyikan sampai syarat terpenuhi.'}`;
+}).catch(() => {});
+showAl(); showRl();
+</script>
+</body>
+</html>
