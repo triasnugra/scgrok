@@ -25,5 +25,17 @@
    "SETUP_BASI_TP_SUDAH_TERSENTUH"
   ],
   "skor": 3
+ },
+ {
+  "id": "2026-11-17T07|NEAR",
+  "d": "2026-11-17T07",
+  "aset": "NEAR",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH"
+  ],
+  "skor": 3
  }
 ]
