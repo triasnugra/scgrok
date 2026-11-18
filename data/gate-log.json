@@ -176,5 +176,173 @@
    "BTC_TIDAK_TERSEDIA"
   ],
   "skor": 3
+ },
+ {
+  "id": "2026-11-18T17|BTC",
+  "d": "2026-11-18T17",
+  "aset": "BTC",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-18T17|ETH",
+  "d": "2026-11-18T17",
+  "aset": "ETH",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_MENYERANG"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-18T17|SOXLB",
+  "d": "2026-11-18T17",
+  "aset": "SOXLB",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "ENTRY_TERLALU_JAUH",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_MENYERANG"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-18T17|BNB",
+  "d": "2026-11-18T17",
+  "aset": "BNB",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_MENYERANG"
+  ],
+  "skor": 2
+ },
+ {
+  "id": "2026-11-18T17|SPCXB",
+  "d": "2026-11-18T17",
+  "aset": "SPCXB",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "BTC_MENYERANG"
+  ],
+  "skor": 2
+ },
+ {
+  "id": "2026-11-18T17|TRX",
+  "d": "2026-11-18T17",
+  "aset": "TRX",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-18T17|DOGE",
+  "d": "2026-11-18T17",
+  "aset": "DOGE",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_MENYERANG"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-18T17|PEPE",
+  "d": "2026-11-18T17",
+  "aset": "PEPE",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_MENYERANG"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-18T17|LTC",
+  "d": "2026-11-18T17",
+  "aset": "LTC",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_MENYERANG"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-18T17|SUI",
+  "d": "2026-11-18T17",
+  "aset": "SUI",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "BTC_MENYERANG"
+  ],
+  "skor": 4
+ },
+ {
+  "id": "2026-11-18T17|ADA",
+  "d": "2026-11-18T17",
+  "aset": "ADA",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_MENYERANG"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-18T17|LINK",
+  "d": "2026-11-18T17",
+  "aset": "LINK",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "BTC_MENYERANG"
+  ],
+  "skor": 4
  }
 ]
