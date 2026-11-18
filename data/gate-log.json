@@ -149,5 +149,32 @@
    "MELAWAN_MUSIM_TANPA_STRUKTUR"
   ],
   "skor": 4
+ },
+ {
+  "id": "2026-11-18T07|UNI",
+  "d": "2026-11-18T07",
+  "aset": "UNI",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "BTC_TIDAK_TERSEDIA"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-18T07|TRX",
+  "d": "2026-11-18T07",
+  "aset": "TRX",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "BTC_TIDAK_TERSEDIA"
+  ],
+  "skor": 3
  }
 ]
