@@ -344,5 +344,104 @@
    "BTC_MENYERANG"
   ],
   "skor": 4
+ },
+ {
+  "id": "2026-11-18T23|BTC",
+  "d": "2026-11-18T23",
+  "aset": "BTC",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 1
+ },
+ {
+  "id": "2026-11-18T23|BNB",
+  "d": "2026-11-18T23",
+  "aset": "BNB",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_MENYERANG"
+  ],
+  "skor": 1
+ },
+ {
+  "id": "2026-11-18T23|DOGE",
+  "d": "2026-11-18T23",
+  "aset": "DOGE",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_MENYERANG"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-18T23|ADA",
+  "d": "2026-11-18T23",
+  "aset": "ADA",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "BTC_MENYERANG"
+  ],
+  "skor": 4
+ },
+ {
+  "id": "2026-11-18T23|PEPE",
+  "d": "2026-11-18T23",
+  "aset": "PEPE",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_MENYERANG"
+  ],
+  "skor": 2
+ },
+ {
+  "id": "2026-11-18T23|MUB",
+  "d": "2026-11-18T23",
+  "aset": "MUB",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_MENYERANG"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-18T23|LTC",
+  "d": "2026-11-18T23",
+  "aset": "LTC",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_MENYERANG"
+  ],
+  "skor": 2
  }
 ]
