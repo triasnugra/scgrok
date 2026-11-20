@@ -551,5 +551,32 @@
    "BTC_TIDAK_TERSEDIA"
   ],
   "skor": 2
+ },
+ {
+  "id": "2026-11-20T07|ZEC",
+  "d": "2026-11-20T07",
+  "aset": "ZEC",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 2
+ },
+ {
+  "id": "2026-11-20T07|ADA",
+  "d": "2026-11-20T07",
+  "aset": "ADA",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH"
+  ],
+  "skor": 3
  }
 ]
