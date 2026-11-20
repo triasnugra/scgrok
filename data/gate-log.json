@@ -507,5 +507,49 @@
    "SETUP_BASI_TP_SUDAH_TERSENTUH"
   ],
   "skor": 4
+ },
+ {
+  "id": "2026-11-19T23|SUI",
+  "d": "2026-11-19T23",
+  "aset": "SUI",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "BTC_TIDAK_TERSEDIA"
+  ],
+  "skor": 4
+ },
+ {
+  "id": "2026-11-19T23|ADA",
+  "d": "2026-11-19T23",
+  "aset": "ADA",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_TIDAK_TERSEDIA"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-19T23|LTC",
+  "d": "2026-11-19T23",
+  "aset": "LTC",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "BTC_TIDAK_TERSEDIA"
+  ],
+  "skor": 2
  }
 ]
