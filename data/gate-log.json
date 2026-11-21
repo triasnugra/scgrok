@@ -578,5 +578,17 @@
    "SETUP_BASI_TP_SUDAH_TERSENTUH"
   ],
   "skor": 3
+ },
+ {
+  "id": "2026-11-21T06|TRX",
+  "d": "2026-11-21T06",
+  "aset": "TRX",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 4
  }
 ]
