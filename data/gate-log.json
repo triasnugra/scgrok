@@ -603,5 +603,18 @@
    "MELAWAN_MUSIM_TANPA_STRUKTUR"
   ],
   "skor": 2
+ },
+ {
+  "id": "2026-11-22T01|ASTER",
+  "d": "2026-11-22T01",
+  "aset": "ASTER",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 2
  }
 ]
