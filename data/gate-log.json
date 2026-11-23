@@ -616,5 +616,27 @@
    "MELAWAN_MUSIM_TANPA_STRUKTUR"
   ],
   "skor": 2
+ },
+ {
+  "id": "2026-11-23T19|XAUT",
+  "d": "2026-11-23T19",
+  "aset": "XAUT",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-23T19|SPCXB",
+  "d": "2026-11-23T19",
+  "aset": "SPCXB",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP"
+  ],
+  "skor": 3
  }
 ]
