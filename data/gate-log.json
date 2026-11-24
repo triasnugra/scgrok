@@ -638,5 +638,19 @@
    "SUMBER_BUKAN_PERP"
   ],
   "skor": 3
+ },
+ {
+  "id": "2026-11-24T03|MUB",
+  "d": "2026-11-24T03",
+  "aset": "MUB",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "ENTRY_TERLALU_JAUH",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH"
+  ],
+  "skor": 3
  }
 ]
