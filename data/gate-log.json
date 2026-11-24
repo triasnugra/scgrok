@@ -652,5 +652,66 @@
    "SETUP_BASI_TP_SUDAH_TERSENTUH"
   ],
   "skor": 3
+ },
+ {
+  "id": "2026-11-24T14|BTC",
+  "d": "2026-11-24T14",
+  "aset": "BTC",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP"
+  ],
+  "skor": 4
+ },
+ {
+  "id": "2026-11-24T14|BNB",
+  "d": "2026-11-24T14",
+  "aset": "BNB",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-24T14|ENA",
+  "d": "2026-11-24T14",
+  "aset": "ENA",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP"
+  ],
+  "skor": 5
+ },
+ {
+  "id": "2026-11-24T14|AVAX",
+  "d": "2026-11-24T14",
+  "aset": "AVAX",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-24T14|WLD",
+  "d": "2026-11-24T14",
+  "aset": "WLD",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 2
  }
 ]
