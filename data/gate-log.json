@@ -728,5 +728,76 @@
    "MELAWAN_MUSIM_TANPA_STRUKTUR"
   ],
   "skor": 1
+ },
+ {
+  "id": "2026-11-25T08|XRP",
+  "d": "2026-11-25T08",
+  "aset": "XRP",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_TIDAK_TERSEDIA"
+  ],
+  "skor": 2
+ },
+ {
+  "id": "2026-11-25T08|DOGE",
+  "d": "2026-11-25T08",
+  "aset": "DOGE",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "BTC_TIDAK_TERSEDIA"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-25T08|SUI",
+  "d": "2026-11-25T08",
+  "aset": "SUI",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_TIDAK_TERSEDIA"
+  ],
+  "skor": 2
+ },
+ {
+  "id": "2026-11-25T08|WLD",
+  "d": "2026-11-25T08",
+  "aset": "WLD",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "BTC_TIDAK_TERSEDIA"
+  ],
+  "skor": 4
+ },
+ {
+  "id": "2026-11-25T08|ADA",
+  "d": "2026-11-25T08",
+  "aset": "ADA",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "BTC_TIDAK_TERSEDIA"
+  ],
+  "skor": 4
  }
 ]
