@@ -713,5 +713,20 @@
    "MELAWAN_MUSIM_TANPA_STRUKTUR"
   ],
   "skor": 2
+ },
+ {
+  "id": "2026-11-24T23|SUI",
+  "d": "2026-11-24T23",
+  "aset": "SUI",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 1
  }
 ]
