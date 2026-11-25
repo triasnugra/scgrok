@@ -799,5 +799,98 @@
    "BTC_TIDAK_TERSEDIA"
   ],
   "skor": 4
+ },
+ {
+  "id": "2026-11-25T18|XRP",
+  "d": "2026-11-25T18",
+  "aset": "XRP",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "ENTRY_TERLALU_JAUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-25T18|PEPE",
+  "d": "2026-11-25T18",
+  "aset": "PEPE",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "ENTRY_TERLALU_JAUH",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-25T18|UNI",
+  "d": "2026-11-25T18",
+  "aset": "UNI",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-25T18|SUI",
+  "d": "2026-11-25T18",
+  "aset": "SUI",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "ENTRY_TERLALU_JAUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-25T18|ADA",
+  "d": "2026-11-25T18",
+  "aset": "ADA",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "ENTRY_TERLALU_JAUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-25T18|LINK",
+  "d": "2026-11-25T18",
+  "aset": "LINK",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "ENTRY_TERLALU_JAUH",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-25T18|QQQB",
+  "d": "2026-11-25T18",
+  "aset": "QQQB",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP"
+  ],
+  "skor": 4
  }
 ]
