@@ -915,5 +915,54 @@
    "MELAWAN_MUSIM_TANPA_STRUKTUR"
   ],
   "skor": 2
+ },
+ {
+  "id": "2026-11-26T11|ETH",
+  "d": "2026-11-26T11",
+  "aset": "ETH",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP"
+  ],
+  "skor": 2
+ },
+ {
+  "id": "2026-11-26T11|SOXLB",
+  "d": "2026-11-26T11",
+  "aset": "SOXLB",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR"
+  ],
+  "skor": 2
+ },
+ {
+  "id": "2026-11-26T11|BNB",
+  "d": "2026-11-26T11",
+  "aset": "BNB",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-26T11|LTC",
+  "d": "2026-11-26T11",
+  "aset": "LTC",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH"
+  ],
+  "skor": 2
  }
 ]
