@@ -964,5 +964,18 @@
    "SETUP_BASI_TP_SUDAH_TERSENTUH"
   ],
   "skor": 2
+ },
+ {
+  "id": "2026-11-26T21|TRX",
+  "d": "2026-11-26T21",
+  "aset": "TRX",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP"
+  ],
+  "skor": 3
  }
 ]
