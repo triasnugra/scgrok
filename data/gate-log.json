@@ -1003,5 +1003,35 @@
    "SETUP_BASI_TP_SUDAH_TERSENTUH"
   ],
   "skor": 1
+ },
+ {
+  "id": "2026-11-27T14|LINK",
+  "d": "2026-11-27T14",
+  "aset": "LINK",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "ENTRY_TERLALU_JAUH",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_TIDAK_TERSEDIA"
+  ],
+  "skor": 2
+ },
+ {
+  "id": "2026-11-27T14|LTC",
+  "d": "2026-11-27T14",
+  "aset": "LTC",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "VOLUME_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "MELAWAN_MUSIM_TANPA_STRUKTUR",
+   "BTC_TIDAK_TERSEDIA"
+  ],
+  "skor": 3
  }
 ]
