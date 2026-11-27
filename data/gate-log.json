@@ -977,5 +977,31 @@
    "SUMBER_BUKAN_PERP"
   ],
   "skor": 3
+ },
+ {
+  "id": "2026-11-27T04|BTC",
+  "d": "2026-11-27T04",
+  "aset": "BTC",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH"
+  ],
+  "skor": 3
+ },
+ {
+  "id": "2026-11-27T04|WBTC",
+  "d": "2026-11-27T04",
+  "aset": "WBTC",
+  "arah": "SHORT",
+  "v": "TOLAK",
+  "alasan": [
+   "SL_TERLALU_TIPIS",
+   "SUMBER_BUKAN_PERP",
+   "SETUP_BASI_TP_SUDAH_TERSENTUH"
+  ],
+  "skor": 1
  }
 ]
