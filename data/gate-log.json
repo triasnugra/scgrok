@@ -1033,5 +1033,16 @@
    "BTC_TIDAK_TERSEDIA"
   ],
   "skor": 3
+ },
+ {
+  "id": "2026-11-28T06|TRX",
+  "d": "2026-11-28T06",
+  "aset": "TRX",
+  "arah": "LONG",
+  "v": "TOLAK",
+  "alasan": [
+   "SUMBER_BUKAN_PERP"
+  ],
+  "skor": 4
  }
 ]
